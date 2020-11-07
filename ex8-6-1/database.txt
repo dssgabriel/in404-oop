@@ -1,0 +1,5 @@
+NomMachine0.locale.local 192.168.0.0
+NomMachine1.server.local 192.168.0.1
+NomMachine2.domain.local 192.168.0.2
+NomMachine3.server.local 192.168.0.3
+NomMachine4.domain.local 192.168.0.4

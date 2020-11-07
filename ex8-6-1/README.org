@@ -1,0 +1,40 @@
+#+TITLE:    Exercise 8.6.1: Using collections - Simulation of a DNS request
+#+AUTHOR:   Gabriel Dos Santos
+
+* Table of contents
+- [[#description][Description]]
+- [[#usage][Usage]]
+
+* Description
+The goal of this exercise is to simulate a request to a Domain Name Server (DNS). A DNS converts an IP address (i.e. 192.168.0.1) to a fully qualified domain name (i.e. machine.domain.local) and vice versa. A fully qualified name is made up of the name of the machine before the first period (~machine~ in the previous example) and the name of domain after it (~domain.local~).
+
+The command line interface should be able to interpret the following command formats:
+- ~qualified.machine.name~ -> should return the associated IP address.
+- ~ip.adr.e.ss~ -> should return the associated machine name.
+- ~ls [-a] domain~ -> should list the machines on the specified domain, sorted alphabetically. If the option ~-a~ is specified when calling the command, it should list the machines' IP addresses instead.
+
+The user may check the content of the ~database.txt~ file before trying out the program.
+
+* Usage
+You can build and/or run the project using the provided Makefile as follows:
+#+BEGIN_SRC bash
+# To only build, run:
+make build
+
+# To build and run immediately:
+make run
+#+END_SRC
+
+You can also create an archive of the project with the provided ~archive~ command:
+#+BEGIN_SRC bash
+make archive
+#+END_SRC
+
+If you wish to build and run the project manually, use the following commands at the root of the project:
+#+BEGIN_SRC bash
+# First, build the project:
+javac -d target/ src/*.java
+
+# Then run it:
+java -cp target/ DnsApp
+#+END_SRC

@@ -1,0 +1,41 @@
+#+TITLE:    Exercise 6.5.1 - RPN Calculator
+#+AUTHOR:   Gabriel Dos Santos
+
+* Table of contents
+- [[#description][Description]]
+- [[#usage][Usage]]
+
+* Description
+In this exercise, we want to program a calculator that works with Reverse Polish Notation (RPN). This post-fixed notation allows us to represent arithmetic formulas without parenthesis. For example, the expression ~2 * (3 + 4)~ would be ~2 3 4 + *~.
+
+The calculator should support basic binary operators (+, - , *, /) on floating-point numbers. The interval of supported values should be specified by two constants (called ~MIN_VALUE~ and ~MAX_VALUE~). The user should type either a number or a binary operator. Typing 'exit' should stop the program. Each input should end with a RET key press. After a user input, the program should display the current expression.
+
+The implementation could be done using a stack that works as follows:
+
+- The operands should be stacked when inputted.
+- The operations should be performed immediately when the input is a binary operator.
+- The result of an operation should be put at the top of the stack.
+
+* Usage
+You can build and/or run the project using the provided Makefile as follows:
+#+BEGIN_SRC bash
+# To only build, run:
+make build
+
+# To build and run immediately:
+make run
+#+END_SRC
+
+You can also create an archive of the project with the provided ~archive~ command:
+#+BEGIN_SRC bash
+make archive
+#+END_SRC
+
+If you wish to build and run the project manually, use the following commands at the root of the project:
+#+BEGIN_SRC bash
+# First, build the project:
+javac -d target/ src/*.java
+
+# Then run it:
+java -cp target/ CalculatriceRPN
+#+END_SRC

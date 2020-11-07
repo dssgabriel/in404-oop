@@ -1,0 +1,37 @@
+#+TITLE:    Exercise 8.6.3: Synthesis exercise - 2D drawing application (CLI)
+#+AUTHOR:   Gabriel Dos Santos
+
+* Table of contents
+- [[#description][Description]]
+- [[#usage][Usage]]
+
+* Description
+The goal of this exercise is to write a small command line interface application to make 2D drawing. When printing a shape to the screen, we should only display its position on the plane and its dimensions.
+
+The program should be allow to support the following functionalities:
+- Manipulating (printing and moving) shapes like rectangles or circles.
+- Applying a global process to shapes (i.e. moving multiples shapes together).
+
+* Usage
+You can build and/or run the project using the provided Makefile as follows:
+#+BEGIN_SRC bash
+# To only build, run:
+make build
+
+# To build and run immediately:
+make run
+#+END_SRC
+
+You can also create an archive of the project with the provided ~archive~ command:
+#+BEGIN_SRC bash
+make archive
+#+END_SRC
+
+If you wish to build and run the project manually, use the following commands at the root of the project:
+#+BEGIN_SRC bash
+# First, build the project:
+javac -d target/ src/*.java
+
+# Then run it:
+java -cp target/ Main
+#+END_SRC
