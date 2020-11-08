@@ -1,6 +1,5 @@
 import java.io.*;
 
-public interface Commande 
-{
+public interface Command {
 	String execute() throws IOException;
 }

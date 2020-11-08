@@ -1,31 +1,21 @@
-public class DnsItem
-{
-    // Attributes
-    private AdresseIP ip;
-    private NomMachine machineName;
+public class DnsItem {
+    private IPAddress ip;
+    private MachineName machineName;
 
-    // Constructor
-    public DnsItem(AdresseIP ip, NomMachine machineName)
-    {
+    public DnsItem(IPAddress ip, MachineName machineName) {
         this.ip = ip;
         this.machineName = machineName;
     }
 
-    // IP adress getter
-    public AdresseIP getIp()
-    {
+    public IPAddress getIp() {
         return this.ip;
     }
 
-    // Machine name getter
-    public NomMachine getMachineName()
-    {
+    public MachineName getMachineName() {
         return this.machineName;
     }
 
-    // DNS item getter
-    public String getDnsItem()
-    {
+    public String getDnsItem() {
         return this.ip.toString() + " " + this.machineName.toString();
     }
 }

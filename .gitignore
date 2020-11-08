@@ -5,3 +5,7 @@ td2/
 td3/
 td4/
 td5/
+
+target/
+
+*.tar

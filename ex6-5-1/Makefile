@@ -1,6 +1,6 @@
 JC = javac
 JVM = java
-MAIN = CalculatriceRPN
+MAIN = RPNCalculator
 ARCHIVE = rpn_calculator
 
 run: build

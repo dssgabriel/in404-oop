@@ -11,6 +11,7 @@ build:
 
 clean:
 	rm -Rf target/
+	rm -Rf *.tar
 
 archive: clean
 	mkdir -p ${ARCHIVE}
