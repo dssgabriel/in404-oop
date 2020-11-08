@@ -3,18 +3,18 @@
 
 * Table of contents :toc:
 - [[#about][About]]
-- [[#rpn-calculator][RPN Calculator]]
-- [[#simulation-of-a-dns-request][Simulation of a DNS request]]
-- [[#2d-drawing-application-cli][2D Drawing application (CLI)]]
+- [[#exercise-651---rpn-calculator][Exercise 6.5.1 - RPN Calculator]]
+- [[#exercise-861---simulation-of-a-dns-request][Exercise 8.6.1 - Simulation of a DNS request]]
+- [[#exercise-863---2d-drawing-application-cli][Exercise 8.6.3 - 2D Drawing application (CLI)]]
 
 * About
 This repository regroups small marked projects for module IN404 - Introduction to Object Oriented Programming. These assignments were fulfilled during the 4th semester of IT bachelor's degree at University of Versailles - Saint-Quentin-en-Yvelines (UVSQ).
 
-* RPN Calculator
+* Exercise 6.5.1 - RPN Calculator
 The goal of this exercise was to program a calculator that works with Reverse Polish Notation (RPN).
 
-* Simulation of a DNS request
+* Exercise 8.6.1 - Simulation of a DNS request
 The goal of this exercise was to simulate a request to a Domain Name Server (DNS).
 
-* 2D Drawing application (CLI)
+* Exercise 8.6.3 - 2D Drawing application (CLI)
 The goal of this exercise was to realize a small application for 2D drawing. It only supports a command line interface (CLI) that describes the shapes' position and dimensions.
