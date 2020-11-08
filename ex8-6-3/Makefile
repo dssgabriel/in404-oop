@@ -14,9 +14,9 @@ clean:
 	rm -Rf *.tar
 
 archive: clean
-	mkdir -p ${ARCHIVE}
-	cp -R src/ ${ARCHIVE}
-	cp Makefile ${ARCHIVE}
-	cp README.org ${ARCHIVE}
-	tar -zcvf ${ARCHIVE}.tar ${ARCHIVE}
-	rm -Rf ${ARCHIVE}
+	mkdir -p $(ARCHIVE)
+	cp -R src/ $(ARCHIVE)
+	cp Makefile $(ARCHIVE)
+	cp README.org $(ARCHIVE)
+	tar -zcvf $(ARCHIVE).tar $(ARCHIVE)
+	rm -Rf $(ARCHIVE)
