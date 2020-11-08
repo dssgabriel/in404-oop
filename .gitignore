@@ -1,4 +1,4 @@
-# Directories to ignore:
+# Directories to ignore
 index/
 td1/
 td2/
@@ -6,6 +6,8 @@ td3/
 td4/
 td5/
 
+# Ignore target/ directories
 target/
 
+# Ignore archives
 *.tar
