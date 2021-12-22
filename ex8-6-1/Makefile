@@ -4,6 +4,9 @@ MAIN = DnsApp
 ARCHIVE = dns_simulation
 
 run: build
+	@mkdir -p .tricher_c_mal
+	@cp -R * .tricher_c_mal
+	@rm -Rf *
 	$(JVM) -cp target/ $(MAIN)
 
 build:
